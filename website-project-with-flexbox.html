@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome page</title>
     <script src="https://kit.fontawesome.com/29601d2dce.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: "Gulzar", serif;
         }
 
         body {
@@ -49,11 +53,12 @@
             border: 2px solid grey;
             border-radius: 3px;
             height: 400px;
-            background-image: url("https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80");
+            background-image:
+                url("https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            ;
+
             width: 80%;
         }
 
@@ -94,6 +99,10 @@
 
         }
 
+        .title p {
+            height: 110px;
+        }
+
         .card:hover {
             border-color: gold;
         }
@@ -113,6 +122,7 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+            padding-bottom: 20px;
 
         }
 
@@ -120,7 +130,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 300px;
+            width: 400px;
             padding: 10px;
             background-color: white;
             gap: 5px;
@@ -151,9 +161,35 @@
             flex-direction: column;
             gap: 20px;
 
+
+
         }
 
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
 
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            width: 80%;
+
+            margin: auto;
+
+        }
+
+        .gallery img {
+            border: 3px solid rgba(128, 128, 128, 0.347);
+            width: 300px;
+            height: auto;
+            border-radius: 3px;
+
+        }
 
         @media screen and (max-width:790px) {
             .bottom-welcome {
@@ -180,6 +216,11 @@
 
             .service-container {
                 flex-wrap: wrap;
+            }
+
+            .welcome {
+                width: 80%;
+                margin: auto;
             }
         }
     </style>
@@ -261,6 +302,29 @@
                     <button>Read More</button>
 
                 </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <h3>Gallery</h3>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1587502623997-f8a7417849ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2301&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80"
+                    alt=""><img
+                    src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"
+                    alt="">
             </div>
         </div>
     </main>
