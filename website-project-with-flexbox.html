@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+    <script src="https://kit.fontawesome.com/29601d2dce.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin-inline: auto;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            width: 80%;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image-header {
+
+
+            border: 2px solid grey;
+            border-radius: 3px;
+            height: 400px;
+            background-image: url("https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            ;
+            width: 80%;
+        }
+
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-welcome {
+            text-align: center;
+        }
+
+        .bottom-welcome {
+            display: flex;
+            justify-content: center;
+
+            gap: 30px;
+        }
+
+
+
+        .card {
+
+            flex-basis: 300px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            transition: border 0.5s ease;
+
+        }
+
+        .card:hover {
+            border-color: gold;
+        }
+
+
+        .services {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: antiquewhite;
+            gap: 30px;
+
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+            padding: 10px;
+            background-color: white;
+            gap: 5px;
+        }
+
+        .title h4 {
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(162, 183, 176, 0.386);
+        }
+
+        .title img {
+            max-width: 100%;
+        }
+
+        .title p {
+            margin-block: 10px;
+        }
+
+        .title button {
+            width: 100px;
+            background-color: orangered;
+            padding: 5px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+
+
+        @media screen and (max-width:790px) {
+            .bottom-welcome {
+                flex-direction: column;
+            }
+
+            .card {
+                flex-basis: 0;
+            }
+
+            .header {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .navigation {
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-container {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header">
+                <h1>FLEXBOX PROJECT</h1>
+                <nav class="navigation">
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Services</p>
+                    <p>Gallery</p>
+                    <p>Contact</p>
+                </nav>
+            </div>
+
+            <div class="image-header"> </div>
+        </div>
+    </header>
+    <main>
+        <div class="welcome">
+            <div class="top-welcome">
+                <h3>Welcome to my website</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia obcaecati dicta dolor iure
+                    perspiciatis aperiam nihil ducimus alias blanditiis consequuntur rerum facere odio sapiente debitis,
+                    natus vero expedita dolorum.</p>
+            </div>
+            <div class="bottom-welcome">
+                <div class="card"><i class="fa-solid fa-magnifying-glass-location"></i>
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quam, accusantium minima
+                        officia ut magnam labore dolore tempore quisquam modi.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-binoculars"></i>
+                    <h4>Out goal</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod aspernatur nisi exercitationem
+                        aperiam eligendi a? Dolor voluptas sequi nulla vitae!</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-map"></i>
+                    <h4>Our history</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae in cupiditate harum ab
+                    ducimus possimus blanditiis, numquam a quae.
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <h3>Services</h3>
+            <div class="service-container">
+                <div class="title">
+                    <h4>Service title</h4>
+                    <img src="https://images.unsplash.com/photo-1634087990018-415aeb951215?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80"
+                        alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo illum id amet. Aperiam, sed?
+                    </p>
+                    <button>Read More</button>
+                </div>
+                <div class="title">
+
+                    <h4>Service title </h4>
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex vero, dolorem qui commodi repellat
+                        nulla.</p>
+                    <button>Read More</button>
+
+                </div>
+                <div class="title">
+
+                    <h4>Service title</h4>
+                    <img src="https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                        alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur exercitationem et quaerat
+                        nesciunt aperiam rem.</p>
+                    <button>Read More</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+
+</script>
+
+</html>
