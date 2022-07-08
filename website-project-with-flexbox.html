@@ -125,6 +125,7 @@
             justify-content: center;
             gap: 30px;
             padding-bottom: 20px;
+            flex-wrap: wrap;
 
         }
 
@@ -132,7 +133,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 400px;
+            flex-basis: 320px;
+            max-width: 400px;
             padding: 10px;
             background-color: white;
             gap: 5px;
@@ -223,6 +225,8 @@
         .right-contact {
             display: flex;
             align-items: center;
+            gap: 10px;
+
 
         }
 
@@ -244,6 +248,10 @@
             text-decoration: none;
             color: initial;
             font-style: italic;
+        }
+
+        .right-contact p {
+            line-height: 20px;
         }
 
         @media screen and (max-width:790px) {
@@ -269,14 +277,19 @@
                 align-items: center;
             }
 
-            .service-container {
-                flex-wrap: wrap;
-            }
+
 
             .welcome {
                 width: 80%;
                 margin: auto;
             }
+        }
+
+        @media screen and (min-width:1025px) {
+            .title {
+                flex-grow: 1;
+            }
+
         }
     </style>
 </head>
@@ -397,6 +410,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <div class="info">
                         <p>Adress</p>
+                        <p>Example adress</p>
                     </div>
                 </div>
                 <div class="right-contact">
@@ -410,12 +424,14 @@
                     <i class="fa-solid fa-phone"></i>
                     <div class="info">
                         <p>Phone</p>
+                        <p>0040023123123</p>
                     </div>
                 </div>
                 <div class="right-contact">
                     <i class="fa-solid fa-earth-africa"></i>
                     <div class="info">
                         <p>Website</p>
+                        <p>www.example.com</p>
                     </div>
                 </div>
             </div>
