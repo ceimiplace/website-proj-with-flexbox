@@ -8,6 +8,7 @@
 body {
   margin-inline: auto;
   padding-top: 30px;
+  padding-inline: 10px;
   display: flex;
   flex-direction: column;
 }
